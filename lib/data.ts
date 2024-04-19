@@ -38,9 +38,17 @@ export const experiencesData = [
     title: "Graduated UMass Amherst",
     location: "Amherst, MA",
     description:
-      "I graduated with a BS in Chemical Engineering. I immediately found a job as a automation engineer.",
+      "I graduated with a BS in Chemical Engineering and a minor in Chemistry.",
     icon: React.createElement(LuGraduationCap),
-    date: "2022",
+    date: "2018 - 2022",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Boston, MA",
+    description:
+      "I work freelance as a full-stack developer. Providing services to a variety of clients.",
+    icon: React.createElement(FaReact),
+    date: "2018 - present",
   },
   {
     title: "Automation Engineer",
@@ -55,14 +63,6 @@ export const experiencesData = [
     location: "Boston, MA",
     description:
       "I work part-time as a software developer for Retail Smart. Developing and maintaining their website and app.",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Boston, MA",
-    description:
-      "I work freelance as a full-stack developer. Providing services to a variety of clients.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
