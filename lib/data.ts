@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Automation Engineer",
     location: "Andover, MA",
     description:
-      "I'm now working full-time as an automation engineer. Developing full-stack GMP controls software.",
+      "I'm now working full-time as an automation engineer for Pfizer. Developing full-stack GMP controls software.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -54,7 +54,15 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Boston, MA",
     description:
-      "I'm a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, and Tailwind.",
+      "I work part time as a software developer for Retail Smart. Developing and maintaining their website and app.",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Boston, MA",
+    description:
+      "I work freelance as a full-stack developer. Providing services to a variety of clients.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },

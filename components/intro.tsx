@@ -32,12 +32,12 @@ export default function Intro() {
           >
             <Image
               src="https://media.licdn.com/dms/image/D4E03AQG81Xi_ukqokQ/profile-displayphoto-shrink_200_200/0/1702348370933?e=1718841600&v=beta&t=aQQqct2c3IT6aiZj-k18HSAb9FSp98wVwnRUu0Oxwk8"
-              alt="Ricardo portrait"
+              alt="Dylan Portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -62,11 +62,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Dylan.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">5 years</span> of experience. I
-        build <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        Hello! I'm <span className="font-bold">Dylan.</span> I'm a{" "}
+        <span className="font-bold">Full-Stack Developer</span> with{" "}
+        <span className="font-bold">5 years</span> of experience.
       </motion.h1>
 
       <motion.div
