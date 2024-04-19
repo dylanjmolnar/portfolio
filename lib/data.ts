@@ -15,10 +15,10 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
+  // {
+  //   name: "Projects",
+  //   hash: "#projects",
+  // },
   {
     name: "Skills",
     hash: "#skills",
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Boston, MA",
     description:
-      "I work part time as a software developer for Retail Smart. Developing and maintaining their website and app.",
+      "I work part-time as a software developer for Retail Smart. Developing and maintaining their website and app.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
