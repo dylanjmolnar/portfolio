@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import rmtDev from "@/public/rmtdev.png";
+import rmtdevImg  from "@/public/rmtdev.png";
 
 export const links = [
   {
@@ -72,7 +72,7 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this project for 3 years providing auotmated moderation services to communities hosting over 40,000 members.",
     tags: ["Javascript", "Node.js", "React", "SQLite", ],
-    imageUrl: rmtDev,
+    imageUrl: rmtdevImg,
   },
 ] as const;
 
