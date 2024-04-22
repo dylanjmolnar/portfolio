@@ -71,7 +71,7 @@ export const projectsData = [
     title: "Automated Moderation Services | Discord",
     description:
       "I worked as a full-stack developer on this project for 3 years providing auotmated moderation services to communities hosting over 40,000 members.",
-    tags: ["Javascript", "Node.js", "React", "SQLite", ],
+    tags: ["Javascript", "Node.js", "React", "SQLite"],
     imageUrl: autoModSerImg,
   },
 ] as const;
