@@ -22,7 +22,7 @@ export default function About() {
         After graduating with a degree in Chemical Engineering, I decided to pursue my
         passion for programming.
         <span className="italic"> When I'm not coding</span>, I'm practicing Spanish or 
-        working on cars and bikes. I'm always looking to learning new things.
+        working on cars and bikes. I'm always looking to learn new things.
       </p>
     </motion.section>
   );
