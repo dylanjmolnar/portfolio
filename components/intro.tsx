@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/D4E03AQG81Xi_ukqokQ/profile-displayphoto-shrink_200_200/0/1702348370933?e=1718841600&v=beta&t=aQQqct2c3IT6aiZj-k18HSAb9FSp98wVwnRUu0Oxwk8"
+              src="https://media.licdn.com/dms/image/v2/D4E03AQG81Xi_ukqokQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1702348370933?e=1730332800&v=beta&t=qgmMjkdlwFnZeweKYMo_372o_zQ6W0Q6_a3SvqsnmUk"
               alt="Dylan Portrait"
               width="192"
               height="192"
