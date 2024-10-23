@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import autoModSerImg  from "@/public/rmtdev.png";
-import wordanalytics  from "@/public/wordanalytics.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -63,16 +63,16 @@ export const projectsData = [
   {
     title: "Automated Moderation Services | Discord",
     description:
-      "I developed and maintained a discord bot account for 3 years providing automated moderation services to communities hosting over 40,000 members.",
+      "Developed and maintained a discord bot account, which provided automated moderation services to communities containing over 40,000 members.",
     tags: ["Javascript", "Node.js", "React", "SQLite"],
     imageUrl: autoModSerImg,
   },
   {
     title: "Retail Smart",
     description:
-      "I helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
+      "Helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: wordanalytics,
+    imageUrl: wordanalyticsImg,
   },
 ] as const;
 
