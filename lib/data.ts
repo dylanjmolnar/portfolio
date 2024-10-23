@@ -56,27 +56,35 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
-  {
-    title: "Full-Stack Developer",
-    location: "Boston, MA",
-    description:
-      "I work part-time as a software developer for Retail Smart. Developing and maintaining their website and app.",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
-  },
 ] as const;
 
 export const projectsData = [
   {
     title: "Automated Moderation Services | Discord",
     description:
-      "I worked as a full-stack developer on this project for 3 years providing auotmated moderation services to communities hosting over 40,000 members.",
+      "I worked as a full-stack developer on this project for 3 years providing automated moderation services to communities hosting over 40,000 members.",
+    tags: ["Javascript", "Node.js", "React", "SQLite"],
+    imageUrl: autoModSerImg,
+  },
+  {
+    title: "Retail Smart",
+    description:
+      "I helped develop and maintain the website for Retail Smart to help automate client supplier relation.",
     tags: ["Javascript", "Node.js", "React", "SQLite"],
     imageUrl: autoModSerImg,
   },
 ] as const;
 
 export const skillsData = [
+  "SCADA",
+  "PLC",
+  "Rockwell",
+  "SQL",
+  "Dream Report",
+  "Logix Designer"
+] as const;
+
+export const skillsData1 = [
   "TypeScript",
   "JavaScript",
   "Python",
