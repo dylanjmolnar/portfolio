@@ -77,11 +77,20 @@ export const projectsData = [
 
 export const skillsData = [
   "SCADA",
+  "GE iFIX",
   "PLC",
   "Rockwell",
+  "Logix Designer",
+  "ControlLogix",
+  "PLC-5",
   "SQL",
+  "SQL Server Manager",
+  "Oracle",
+  "Toad for Oracle",
+  "Python",
   "Dream Report",
-  "Logix Designer"
+  "FAT Testing",
+  "SAT Testing"
 ] as const;
 
 export const skillsData1 = [
