@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import autoModSerImg  from "@/public/rmtdev.png";
-//import riqIMG  from "@/public/riq.png";
+import wordanalytics  from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -72,7 +72,7 @@ export const projectsData = [
     description:
       "I helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: autoModSerImg,
+    imageUrl: wordanalytics,
   },
 ] as const;
 
