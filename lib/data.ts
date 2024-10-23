@@ -63,7 +63,7 @@ export const projectsData = [
   {
     title: "Automated Moderation Services | Discord",
     description:
-      "I developed and maintained an automated discord bot account for 3 years providing automated moderation services to communities hosting over 40,000 members.",
+      "I developed and maintained a discord bot account for 3 years providing automated moderation services to communities hosting over 40,000 members.",
     tags: ["Javascript", "Node.js", "React", "SQLite"],
     imageUrl: autoModSerImg,
   },
