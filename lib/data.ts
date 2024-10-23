@@ -45,7 +45,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Boston, MA",
     description:
-      "I work freelance as a full-stack developer. Providing services to a variety of clients.",
+      "I do full-stack development freelance. Providing services to a variety of clients.",
     icon: React.createElement(FaReact),
     date: "2018 - present",
   },
