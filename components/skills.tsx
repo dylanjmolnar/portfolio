@@ -47,6 +47,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
+      <br/>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData1.map((skill, index) => (
           <motion.li
