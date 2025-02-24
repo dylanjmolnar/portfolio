@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import autoModSerImg  from "@/public/rmtdev.png";
+import RIQImg  from "@/public/wordanalytics.png";
 //import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -72,7 +73,7 @@ export const projectsData = [
     description:
       "Helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: autoModSerImg,
+    imageUrl: RIQImg,
   },
 ] as const;
 
@@ -80,38 +81,38 @@ export const skillsData = [
   "SCADA",
   "GE iFIX",
   "PLC",
+  "SQL",
   "Rockwell",
   "Logix Designer",
+  "Python",
   "ControlLogix",
   "PLC-5",
-  "SQL",
-  "SQL Server Manager",
+  "FactoryTalk",
   "Oracle",
-  "Toad for Oracle",
-  "Python",
+  "OPC",
+  "OSI PI",
   "Dream Report",
-  "FAT Testing",
-  "SAT Testing"
+  "FAT/SAT Testing"
 ] as const;
 
 export const skillsData1 = [
   "TypeScript",
   "JavaScript",
   "Python",
-  "HTML",
+  "HTML5",
   "CSS",
-  "PHP",
   "Node.js",
   "React",
   "Next.js",
   "Vite",
+  "JSON",
+  "SQL",
   "Git",
+  "Firebase",
+  "Rest API",
+  "Web Scraping",
+  "PHP",
   "Tailwind",
   "Bootstrap",
-  "Chakra-UI",
-  "SQL",
-  "Firebase",
-  "Oracle",
-  "Rest API",
-  "Web Scraping"
+  "Chakra-UI"
 ] as const;
