@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import autoModSerImg  from "rmtdev.png";
-import RIQImg  from "wordanalytics.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -66,14 +63,14 @@ export const projectsData = [
     description:
       "Developed and maintained a discord bot account, which provided automated moderation services to communities containing over 40,000 members.",
     tags: ["Javascript", "Node.js", "React", "SQLite"],
-    imageUrl: autoModSerImg,
+    imageUrl: "/rmtdev.png",
   },
   {
     title: "Retail Smart",
     description:
       "Helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: RIQImg,
+    imageUrl: "/wordanalytics.png",
   },
 ] as const;
 
