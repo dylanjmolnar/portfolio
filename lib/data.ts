@@ -63,14 +63,14 @@ export const projectsData = [
     description:
       "Developed and maintained a discord bot account, which provided automated moderation services to communities containing over 40,000 members.",
     tags: ["Javascript", "Node.js", "React", "SQLite"],
-    imageUrl: "/rmtdev.png",
+    imageUrl: "rmtdev.png",
   },
   {
     title: "Retail Smart",
     description:
       "Helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: "/wordanalytics.png",
+    imageUrl: "wordanalytics.png",
   },
 ] as const;
 
