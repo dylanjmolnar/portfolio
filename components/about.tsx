@@ -19,10 +19,9 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in Chemical Engineering, I decided to pursue my
-        passion for programming.
-        <span className="italic"> When I'm not coding</span>, I'm practicing Spanish or 
-        working on cars and bikes. I'm always looking to learn new things.
+        After graduating from UMass Amherst with a BS degree in Chemical Engineering, I 
+        decided to pursue my passion for programming.
+        When I'm not coding, I'm learning new languages, modifying cars/bikes, and traveling the world.
       </p>
     </motion.section>
   );
