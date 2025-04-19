@@ -70,7 +70,7 @@ export const projectsData = [
     description:
       "Helped develop and maintain the website for Retail Smart to help automate client-supplier relation.",
     tags: ["TypeScript", "Chakra UI", "React", "Firebase"],
-    imageUrl: "wordanalytics.png",
+    imageUrl: "wordanalytics.PNG",
   },
 ] as const;
 
