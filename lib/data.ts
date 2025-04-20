@@ -37,7 +37,7 @@ export const experiencesData = [
     description:
       "I graduated with a BS in Chemical Engineering and a minor in Chemistry.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2022",
+    date: `${" "}2018 - 2022`,
   },
   {
     title: "Full-Stack Developer",
