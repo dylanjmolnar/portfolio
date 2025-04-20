@@ -25,8 +25,6 @@ export default function Skills() {
 
   return (
     <>
-    <i className="devicon-typescript-plain colored"></i>
-    <i className="devicon-javascript-plain colored"></i>
     <section
       id="skills"
       ref={ref}
