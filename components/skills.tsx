@@ -30,6 +30,9 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
+      <i className="devicon-typescript-plain colored"></i>
+      <i className="devicon-javascript-plain colored"></i>
+
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
