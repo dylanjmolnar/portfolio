@@ -29,10 +29,7 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:dylanjosephmolnar@gmail.com">
-          dylanjosephmolnar@gmail.com
-        </a>{" "}
+        Please contact me directly at dylanjosephmolnar@gmail.com
       </p>
     </motion.section>
   );
