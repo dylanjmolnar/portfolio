@@ -26,12 +26,12 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contact Me</SectionHeading>
       <br/>
       <br/>
       <br/>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        dylanjosephmolnar@gmail.com
+        dylanmolnar1@gmail.com
       </p>
     </motion.section>
   );
