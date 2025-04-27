@@ -51,7 +51,7 @@ export const experiencesData = [
     title: "Pfizer | Automation Engineer",
     location: "Andover, MA",
     description:
-      "At Pfizer, I develop full-stack GMP controls software.",
+      "At Pfizer, I develop automated controls software.",
     icon: React.createElement(CgWorkAlt),
     date: "Sept 2022 - present",
   },
@@ -90,26 +90,4 @@ export const skillsData = [
   "OSI PI",
   "Dream Report",
   "FAT/SAT Testing"
-] as const;
-
-export const skillsData1 = [
-  "TypeScript",
-  "JavaScript",
-  "Python",
-  "HTML5",
-  "CSS",
-  "Node.js",
-  "React",
-  "Next.js",
-  "Vite",
-  "JSON",
-  "SQL",
-  "Git",
-  "Firebase",
-  "Rest API",
-  "Web Scraping",
-  "PHP",
-  "Tailwind",
-  "Bootstrap",
-  "Chakra-UI"
 ] as const;

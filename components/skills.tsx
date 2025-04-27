@@ -2,9 +2,10 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { skillsData, skillsData1 } from "@/lib/data";
+import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import "devicon/devicon.min.css"; // Don't forget to import devicon styles
 
 const fadeInAnimationVariants = {
   initial: {
@@ -31,7 +32,8 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-
+      <br />
+      <h1 className="text-2xl font-bold mb-8">Automation</h1>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -50,23 +52,46 @@ export default function Skills() {
         ))}
       </ul>
       <br/>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData1.map((skill, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul>
+      <br />
+      <h1 className="text-2xl font-bold mb-8">Tech Stack</h1>
+      <div className="flex justify-center flex-wrap gap-4">
+        <div className="p-6">
+          <i className="devicon-react-original-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-typescript-plain colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-javascript-plain colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-python-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-html5-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-css3-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-git-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-nodejs-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-amazonwebservices-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-firebase-plain-wordmark colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-reactbootstrap-original colored text-7xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-tailwindcss-plain-wordmark colored text-7xl"></i>
+        </div>
+      </div>
     </section>
     </>
   );
