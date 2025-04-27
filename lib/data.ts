@@ -43,7 +43,7 @@ export const experiencesData = [
     title: "Software Developer",
     location: "United States",
     description:
-      "I have many freelance projects. I provide many services and softwares to a variety of clients.",
+      "I provide many services and softwares to a variety of clients.",
     icon: React.createElement(FaReact),
     date: "2018 - present",
   },
