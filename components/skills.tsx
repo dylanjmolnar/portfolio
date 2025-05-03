@@ -104,7 +104,10 @@ export default function Skills() {
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
         </div>
         <div className="p-6">
-          <i className="devicon-nextjs-plain colored text-8xl"></i>
+          <img 
+          width="96"
+          height="96"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
         </div>
       </div>
     </section>
