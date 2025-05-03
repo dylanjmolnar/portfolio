@@ -8,7 +8,8 @@ const nextConfig = {
       },
     ],
   },
-  output: "export"
+  output: "export",
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
 };
 
 module.exports = nextConfig;
