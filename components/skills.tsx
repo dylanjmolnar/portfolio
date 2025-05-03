@@ -50,46 +50,61 @@ export default function Skills() {
             {skill}
           </motion.li>
         ))}
+        <div className="p-6">
+          <i className="devicon-microsoftsqlserver-plain-wordmark colored text-8xl"></i>
+        </div>
+        <div className="p-6">
+          <i className="devicon-oracle-original colored text-8xl"></i>
+        </div>
       </ul>
       <br/>
       <br />
       <h1 className="text-2xl font-bold mb-8">Tech Stack</h1>
       <div className="flex justify-center flex-wrap gap-4">
         <div className="p-6">
-          <i className="devicon-react-original-wordmark colored text-7xl"></i>
+          <i className="devicon-typescript-plain colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-typescript-plain colored text-7xl"></i>
+          <i className="devicon-javascript-plain colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-javascript-plain colored text-7xl"></i>
+          <i className="devicon-python-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-python-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-html5-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-html5-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-css3-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-css3-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-react-original-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-git-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-git-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-nodejs-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-nodejs-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-amazonwebservices-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-amazonwebservices-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-firebase-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-firebase-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-reactbootstrap-original colored text-7xl"></i>
+          <i className="devicon-reactbootstrap-original colored text-8xl"></i>
         </div>
         <div className="p-6">
-          <i className="devicon-tailwindcss-plain-wordmark colored text-7xl"></i>
+          <i className="devicon-tailwindcss-plain-wordmark colored text-8xl"></i>
+        </div>
+        <div className="p-6">
+          <img 
+          width="96"
+          height="96"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
+        </div>
+        <div className="p-6">
+          <i className="devicon-nextjs-plain colored text-8xl"></i>
         </div>
       </div>
     </section>

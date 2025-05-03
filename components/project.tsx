@@ -49,9 +49,11 @@ export default function Project({
         </div>
 
         <Image
-          src={imageUrl}
+          src={`/${imageUrl}`}
           alt="Project"
           quality={95}
+          width={500}
+          height={300}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
