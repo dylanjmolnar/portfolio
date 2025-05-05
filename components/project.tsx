@@ -49,7 +49,7 @@ export default function Project({
         </div>
 
         <Image
-          src={`${imageUrl}`}
+          src={`${process.env.NODE_ENV === 'production' ? '' : '/'}${imageUrl}`}
           alt="Project"
           quality={95}
           width={500}

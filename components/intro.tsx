@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="portrait.jpg"
+              src={`${process.env.NODE_ENV === 'production' ? '' : '/'}portrait.jpg`}
               alt="Dylan Portrait"
               width="192"
               height="192"
