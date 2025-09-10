@@ -34,7 +34,7 @@ export default function Skills() {
       <SectionHeading>My skills</SectionHeading>
       <br />
       <h1 className="text-2xl font-bold mb-8">Automation</h1>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 mb-8">
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -50,13 +50,15 @@ export default function Skills() {
             {skill}
           </motion.li>
         ))}
+      </ul>
+      <div className="flex justify-center flex-wrap gap-4">
         <div className="p-6">
           <i className="devicon-microsoftsqlserver-plain-wordmark colored text-8xl"></i>
         </div>
         <div className="p-6">
           <i className="devicon-oracle-original colored text-8xl"></i>
         </div>
-      </ul>
+      </div>
       <br/>
       <br />
       <h1 className="text-2xl font-bold mb-8">Tech Stack</h1>
