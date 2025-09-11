@@ -51,7 +51,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
-      <div className="flex justify-center flex-wrap gap-4">
+      <div className="flex justify-center flex-wrap gap-4 w-full sm:flex-nowrap">
         <div className="p-6">
           <i className="devicon-microsoftsqlserver-plain-wordmark colored text-8xl"></i>
         </div>
