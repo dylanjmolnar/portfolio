@@ -1,23 +1,35 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { IoCopy, IoCheckmark } from "react-icons/io5";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [emailCopied, setEmailCopied] = useState(false);
+  const email = "dylanmolnar1@gmail.com";
 
   // Calculate years of experience since November 1st, 2017
   const startDate = new Date('2017-11-01');
   const currentDate = new Date();
   const yearsOfExperience = Math.floor((currentDate.getTime() - startDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setEmailCopied(true);
+      setTimeout(() => {
+        setEmailCopied(false);
+      }, 10000);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+    }
+  };
 
   return (
     <section
@@ -80,20 +92,27 @@ export default function Intro() {
         }}
       >
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
-          <Link
-            href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
+          <button
+            onClick={handleCopyEmail}
+            className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition whitespace-nowrap ${
+              emailCopied
+                ? "bg-green-500 text-white"
+                : "bg-gray-900 text-white hover:bg-gray-950"
+            }`}
           >
-            Contact me here{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-          </Link>
+            {emailCopied ? (
+              <>
+                Copied Email! <IoCheckmark className="opacity-70" />
+              </>
+            ) : (
+              <>
+                {email} <IoCopy className="opacity-70 group-hover:scale-110 transition" />
+              </>
+            )}
+          </button>
 
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap"
             href="./Resume.pdf"
             download
           >
