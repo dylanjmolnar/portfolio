@@ -47,15 +47,34 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
-              src={`${process.env.NODE_ENV === 'production' ? '' : '/'}portrait.jpg`}
-              alt="Dylan Portrait"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            {process.env.NODE_ENV === 'development' ? (
+              <a
+                href="https://dylanjmolnar.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <Image
+                  src="/portrait.jpg"
+                  alt="Dylan Portrait"
+                  width="192"
+                  height="192"
+                  quality="95"
+                  priority={true}
+                  className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl hover:opacity-80 transition-opacity"
+                />
+              </a>
+            ) : (
+              <Image
+                src={`${process.env.NODE_ENV === 'production' ? '' : '/'}portrait.jpg`}
+                alt="Dylan Portrait"
+                width="192"
+                height="192"
+                quality="95"
+                priority={true}
+                className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              />
+            )}
           </motion.div>
 
           <motion.span
