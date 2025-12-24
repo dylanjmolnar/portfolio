@@ -32,18 +32,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "UMass Amherst",
+    title: "University of Massachusetts Amherst",
     location: "Amherst, MA",
     description:
-      "BS in Chemical Engineering\nMinor in Chemistry",
+      "Bachelor of Science in Chemical Engineering\nMinor in Chemistry",
     icon: React.createElement(LuGraduationCap),
     date: `2018 - 2022`,
   },
   {
     title: "Software Developer",
-    location: "United States",
+    location: "Worldwide",
     description:
-      "I provide many services and softwares to a variety of clients.",
+      "Develop and deliver custom software solutions and services. Specialize in full-stack development, system architecture, and scalable application design.",
     icon: React.createElement(FaReact),
     date: "2018 - present",
   },
@@ -51,9 +51,9 @@ export const experiencesData = [
     title: "Pfizer | Automation Engineer",
     location: "Andover, MA",
     description:
-      "At Pfizer, I develop automated controls software.",
+      "Design, develop, and maintain automated control systems and software solutions for pharmaceutical manufacturing processes.",
     icon: React.createElement(CgWorkAlt),
-    date: "Sept 2022 - present",
+    date: "2022 - present",
   },
 ] as const;
 

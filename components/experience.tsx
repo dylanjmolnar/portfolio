@@ -2,57 +2,54 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
-  const { theme } = useTheme();
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="" className="vertical-timeline-custom">
+      <div className="w-full max-w-[53rem] mx-auto">
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              contentStyle={{
-                background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 1.6rem",
-              }}
-              contentArrowStyle={{
-                borderRight:
-                  theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
-              }}
-              date={item.date}
-              icon={item.icon}
-              iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
-              }}
-            >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+          <motion.div
+            key={index}
+            className="mb-8 last:mb-0"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <div className="bg-gray-100 border border-black/5 rounded-lg p-6 sm:p-8 hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:border-white/10">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="bg-white p-3 rounded-full shadow-md dark:bg-white/15 flex-shrink-0">
+                    <div className="text-2xl text-gray-700 dark:text-white/80">
+                      {item.icon}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold capitalize text-gray-950 dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-white/70 mt-1">
+                      {item.location}
+                    </p>
+                  </div>
+                </div>
+                <div className="text-sm font-medium text-gray-500 dark:text-white/60 sm:text-right">
+                  {item.date}
+                </div>
+              </div>
+              <p className="text-gray-700 dark:text-white/75 whitespace-pre-line leading-relaxed">
                 {item.description}
               </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
+            </div>
+          </motion.div>
         ))}
-      </VerticalTimeline>
+      </div>
     </section>
   );
 }

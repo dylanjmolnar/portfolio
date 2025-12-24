@@ -33,7 +33,7 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       <br />
-      <h1 className="text-2xl font-bold mb-8">Automation</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold mb-8">Automation</h1>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 mb-8">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -58,10 +58,18 @@ export default function Skills() {
         <div className="p-6">
           <i className="devicon-oracle-original colored text-8xl"></i>
         </div>
+        <div className="p-6">
+          <img 
+            width="96"
+            height="96"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg"
+            alt="Visual Basic"
+          />
+        </div>
       </div>
       <br/>
       <br />
-      <h1 className="text-2xl font-bold mb-8">Tech Stack</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold mb-8">Tech Stack</h1>
       <div className="flex justify-center flex-wrap gap-4">
         <div className="p-6">
           <i className="devicon-typescript-plain colored text-8xl"></i>
