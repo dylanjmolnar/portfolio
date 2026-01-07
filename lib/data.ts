@@ -56,7 +56,7 @@ export const experiencesData = [
       "Design, develop, and maintain automated control systems and software solutions for pharmaceutical manufacturing processes.",
     icon: React.createElement(CgWorkAlt),
     iconType: "image",
-    iconUrl: "Pfizer_logo.png",
+    iconUrl: "Pfizer_Logo.png",
     date: "2022 - present",
   },
 ] as const;
