@@ -113,10 +113,10 @@ export default function Intro() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           <button
             onClick={handleCopyEmail}
-            className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition whitespace-nowrap ${
+            className={`group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap min-w-[19rem] ${
               emailCopied
-                ? "bg-green-500 text-white"
-                : "bg-gray-900 text-white hover:bg-gray-950"
+                ? "bg-green-500 text-black"
+                : "text-black dark:text-white hover:bg-white/90"
             }`}
           >
             {emailCopied ? (
@@ -131,7 +131,7 @@ export default function Intro() {
           </button>
 
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap text-black dark:text-white hover:bg-white/90"
             href="./Resume.pdf"
             download
           >

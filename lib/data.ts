@@ -35,8 +35,10 @@ export const experiencesData = [
     title: "University of Massachusetts Amherst",
     location: "Amherst, MA",
     description:
-      "Bachelor of Science in Chemical Engineering\nMinor in Chemistry",
+      "BS in Chemical Engineering\nMinor in Chemistry",
     icon: React.createElement(LuGraduationCap),
+    iconType: "image",
+    iconUrl: "umass-logo2.png",
     date: `2018 - 2022`,
   },
   {
@@ -45,7 +47,7 @@ export const experiencesData = [
     description:
       "Develop and deliver custom software solutions and services. Specialize in full-stack development, system architecture, and scalable application design.",
     icon: React.createElement(FaReact),
-    date: "2018 - present",
+    date: "2017 - present",
   },
   {
     title: "Pfizer | Automation Engineer",
@@ -53,6 +55,8 @@ export const experiencesData = [
     description:
       "Design, develop, and maintain automated control systems and software solutions for pharmaceutical manufacturing processes.",
     icon: React.createElement(CgWorkAlt),
+    iconType: "image",
+    iconUrl: "Pfizer_logo.png",
     date: "2022 - present",
   },
 ] as const;
@@ -68,7 +72,7 @@ export const projectsData = [
   {
     title: "Retail Smart",
     description:
-      "",
+      "Connecting clients and wholesalers around New England!",
     tags: ["TypeScript", "React Native", "Chakra UI", "Firebase"],
     imageUrl: "wordanalytics.PNG",
   },
