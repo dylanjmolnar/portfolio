@@ -1,0 +1,17 @@
+const path = require('path');
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  outputFileTracingRoot: path.join(__dirname),
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      },
+    ],
+  },
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+};
+
+module.exports = nextConfig;
