@@ -34,7 +34,7 @@ export default function About() {
       <p className="mb-3">
         What started as small coding project to make my own life easier, has transformed into a career of developing systems and software for myself and others. 
         When I'm not coding, I am...{" "}
-        <span className="inline-flex h-7 items-center overflow-hidden align-middle min-w-[22ch] justify-center">
+        <span className="inline-flex h-7 items-center overflow-hidden align-middle min-w-[25.5ch] justify-end">
           <AnimatePresence mode="wait">
             <motion.span
               key={languages[activeLangIndex]}
