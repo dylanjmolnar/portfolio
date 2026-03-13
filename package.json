@@ -1,12 +1,12 @@
 {
-  "homepage": "https://dylanjmolnar.github.io/portfolio",
+  "homepage": "https://www.billypickles.com",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages - d build",
+    "deploy": "gh-pages -d out",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
