@@ -4,6 +4,7 @@ const path = require('path');
 const nextConfig = {
   outputFileTracingRoot: path.join(__dirname),
   images: {
+    qualities: [75, 95],
     remotePatterns: [
       {
         protocol: "https",

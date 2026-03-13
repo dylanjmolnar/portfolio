@@ -41,25 +41,26 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact Me</SectionHeading>
-      <br/>
-      <br/>
-      <br/>
+      <SectionHeading>Get In Touch</SectionHeading>
+      <p className="text-gray-700 dark:text-white/70 mt-6 mb-12">
+        Let's collaborate on your next project!
+      </p>
+
       <button
         onClick={handleCopyEmail}
-        className={`group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap min-w-[19rem] mx-auto ${
-          emailCopied
-            ? "bg-green-500 text-black"
-            : "text-black dark:text-white hover:bg-white/90"
-        }`}
+        className={`group relative overflow-hidden px-8 py-4 flex items-center justify-center gap-3 rounded-full outline-none hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer border border-black/10 dark:border-white/10 whitespace-nowrap min-w-[20rem] mx-auto shadow-lg backdrop-blur-sm ${emailCopied
+            ? "bg-emerald-500/90 text-white"
+            : "bg-gray-900/90 dark:bg-white/5 text-white dark:text-white/90 dark:hover:bg-white/10"
+          }`}
       >
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 pointer-events-none" />
         {emailCopied ? (
           <>
-            Copied Email! <IoCheckmark className="opacity-70" />
+            <span className="relative z-10 font-medium">Copied Email!</span> <IoCheckmark className="text-xl relative z-10" />
           </>
         ) : (
           <>
-            {email} <IoCopy className="opacity-70 group-hover:scale-110 transition" />
+            <span className="relative z-10 font-medium">{email}</span> <IoCopy className="opacity-70 group-hover:translate-x-1 transition relative z-10" />
           </>
         )}
       </button>

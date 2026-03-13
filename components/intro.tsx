@@ -98,63 +98,62 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hey! I'm <span className="font-bold">Dylan</span>, a Software Developer with over{" "}
+        Hey! I'm <span className="font-bold text-gradient">Dylan</span>, a Software Engineer with over{" "}
         <span className="font-bold">{yearsOfExperience} years</span> of experience.
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
         }}
       >
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={handleCopyEmail}
-            className={`group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap min-w-[19rem] ${
-              emailCopied
-                ? "bg-green-500 text-black"
-                : "text-black dark:text-white hover:bg-white/90"
-            }`}
+            className={`group px-7 py-3 flex items-center justify-center gap-3 rounded-full outline-none hover:scale-105 active:scale-95 transition-all cursor-pointer borderBlack whitespace-nowrap min-w-[19rem] shadow-sm ${emailCopied
+                ? "bg-emerald-500 text-white border-emerald-600"
+                : "bg-gray-900 text-white hover:bg-gray-950 dark:bg-white/10 dark:hover:bg-white/20"
+              }`}
           >
             {emailCopied ? (
               <>
-                Copied Email! <IoCheckmark className="opacity-70" />
+                Copied Email! <IoCheckmark className="text-xl" />
               </>
             ) : (
               <>
-                {email} <IoCopy className="opacity-70 group-hover:scale-110 transition" />
+                {email} <IoCopy className="opacity-70 group-hover:translate-x-1 transition" />
               </>
             )}
           </button>
 
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 whitespace-nowrap text-black dark:text-white hover:bg-white/90"
+            className="group bg-white px-7 py-3 flex items-center gap-3 rounded-full outline-none hover:scale-105 active:scale-95 transition-all cursor-pointer borderBlack text-gray-900 hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 shadow-sm"
             href="./Resume.pdf"
             download
           >
             Download Resume{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
           </a>
         </div>
 
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-3">
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full hover:scale-110 active:scale-95 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white shadow-sm"
             href="https://linkedin.com/in/dylanjmolnar"
             target="_blank"
           >
-            <BsLinkedin />
+            <BsLinkedin size={20} />
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white shadow-sm"
             href="https://github.com/dylanjmolnar"
             target="_blank"
           >
-            <FaGithubSquare />
+            <FaGithubSquare size={24} />
           </a>
         </div>
       </motion.div>

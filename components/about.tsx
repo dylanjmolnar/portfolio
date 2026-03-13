@@ -30,26 +30,31 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        What started as small coding project to make my own life easier, has transformed into a career of developing systems and software for myself and others. 
-        When I'm not coding, I am...{" "}
-        <span className="inline-flex h-7 items-center overflow-hidden align-middle min-w-[25.5ch] justify-end">
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={languages[activeLangIndex]}
-              initial={{ y: -12, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 12, opacity: 0 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="font-semibold text-white"
-            >
-              {languages[activeLangIndex]}
-            </motion.span>
-          </AnimatePresence>
-        </span>
-        , modifying cars/bikes, and traveling the world.
-      </p>
+      <SectionHeading>About Me</SectionHeading>
+      <div className="bg-white/60 dark:bg-white/5 backdrop-blur-md border border-black/5 dark:border-white/10 p-8 rounded-3xl shadow-lg mt-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 dark:from-blue-500/10 dark:to-purple-500/10 pointer-events-none" />
+        <p className="mb-6 text-lg leading-relaxed text-gray-800 dark:text-gray-300 relative z-10">
+          What started as a small coding project to make my own life easier has transformed into a passion for developing systems and software for myself and others. 
+        </p>
+        <p className="text-lg leading-relaxed text-gray-800 dark:text-gray-300 relative z-10">
+          When I'm not coding, I am...{""}
+          <span className="inline-flex h-8 items-center overflow-hidden align-middle min-w-[24ch] justify-center">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={languages[activeLangIndex]}
+                initial={{ y: -12, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 12, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="font-bold text-gray-950 dark:text-white border-b-2 border-blue-500"
+              >
+                {languages[activeLangIndex]}
+              </motion.span>
+            </AnimatePresence>
+          </span>
+          , modifying cars/bikes, and traveling the world.
+        </p>
+      </div>
     </motion.section>
   );
 }

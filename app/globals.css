@@ -2,14 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --line-color: #e5e7eb;
+:root {
+  --bg-color: #f8fafc;
+  --text-color: #0f172a;
+  --accent-color: #3b82f6;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+.dark {
+  --bg-color: #030712;
+  --text-color: #f8fafc;
+  --accent-color: #60a5fa;
+  --glass-bg: rgba(17, 24, 39, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-[var(--bg-color)] text-[var(--text-color)] transition-colors duration-300;
+  min-height: 100vh;
+}
+
+.glass {
+  @apply backdrop-blur-md border-[var(--glass-border)] bg-[var(--glass-bg)];
 }
 
 .borderBlack {
-  @apply border border-black/10;
+  @apply border border-black/10 dark:border-white/10;
+}
+
+/* Custom Utilities */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400;
+}
+
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.dark .bg-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,10%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,10%,1) 0, transparent 50%);
 }
