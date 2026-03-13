@@ -55,7 +55,7 @@ export const projectsData = [
     description:
       "Regional platform connecting clients and wholesalers across New England with real-time analytics and inventory management.",
     tags: ["TypeScript", "React Native", "Firebase", "Chakra UI"],
-    imageUrl: "Retail_Smart.PNG",
+    imageUrl: "Retail_Smart.png",
     category: "Client Work",
     projectUrl: "https://r-iq.net",
     role: "Software Engineer",
