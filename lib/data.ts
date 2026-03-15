@@ -81,7 +81,7 @@ export const projectsData = [
     category: "Industry Experience",
     projectUrl: "#",
     role: "Automation Engineer",
-    date: "2021 - 2023",
+    date: "Sep 2022 - Present",
   },
 ] as const;
 
