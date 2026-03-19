@@ -73,7 +73,7 @@ export const projectsData = [
     date: "Nov 2017 - Apr 2021",
   },
   {
-    title: "Automation Engineer",
+    title: "Pfizer",
     description:
       "Develop and maintaine automated equipment at the site to comply with GMP regulations.",
     tags: ["PLC", "SCADA", "SQL", "Rockwell", "Visual Basic"],
