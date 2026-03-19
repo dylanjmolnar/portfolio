@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Automated Moderation Services",
     description:
-      "Advanced Discord moderation tools reaching over 50,000 members. Built for scale and reliability.",
+      "Advanced chat platform moderation tools reaching over 50k members. Built for scale and reliability.",
     tags: ["Javascript", "Node.js", "SQLite"],
     imageUrl: "Auto_Mod_Service.png",
     category: "Client Work",
@@ -75,7 +75,7 @@ export const projectsData = [
   {
     title: "Pfizer",
     description:
-      "Develop and maintaine automated equipment at the site to comply with GMP regulations.",
+      "Modernized legacy control systems and integrate new automated equipment to enhance process reliability.",
     tags: ["PLC", "SCADA", "SQL", "Rockwell", "Visual Basic"],
     imageUrl: "Pfizer_Logo.png",
     category: "Industry Experience",
