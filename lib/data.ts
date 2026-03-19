@@ -89,13 +89,11 @@ export const skillsData = [
   "PLC",
   "SCADA",
   "Rockwell",
-  "Logix Designer",
   "GE iFIX",
-  "Python",
-  "ControlLogix",
   "PLC-5",
   "FactoryTalk",
-  "OPC",
   "OSI PI",
   "Dream Report",
+  "Validation",
+  "GMP"
 ] as const;
