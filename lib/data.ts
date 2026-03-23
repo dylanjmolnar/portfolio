@@ -31,7 +31,7 @@ export const projectsData = [
     title: "Billy Pickles",
     description:
       "A software, tech, and in-house designed parts and tools company I started. Specializing in custom internal tooling and specialized software solutions.",
-    tags: ["React", "Next.js", "Typescript", "", "CAD/CAM"],
+    tags: ["Vite", "Typescript", "CAD/CAM"],
     imageUrl: "Retail_Smart.PNG", 
     category: "Personal Venture",
     projectUrl: "https://billypickles.com",
@@ -39,10 +39,10 @@ export const projectsData = [
     date: "Oct 2025 - Present",
   },
   {
-    title: "HolowStreet",
+    title: "Holow Street",
     description:
       "A premium streetware, art, and accessories brand. Designed and developed a high-impact e-commerce platform for a unique digital presence.",
-    tags: ["Next.js", "Tailwind", "Framer Motion", "Stripe", "E-commerce"],
+    tags: ["Vite", "Typescript", "Stripe", "better-sqlite3"],
     imageUrl: "Retail_Smart.PNG", 
     category: "Client Work",
     projectUrl: "https://holowstreet.com",
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Automated Moderation Services",
     description:
-      "Advanced chat platform moderation tools reaching over 50k members. Built for scale and reliability.",
+      "Chatting platform moderation tools reaching over 50k users. Built for scale and reliability.",
     tags: ["Javascript", "Node.js", "SQLite"],
     imageUrl: "Auto_Mod_Service.png",
     category: "Client Work",

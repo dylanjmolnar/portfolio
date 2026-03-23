@@ -98,7 +98,7 @@ export default function Skills() {
               { type: 'icon', name: "html5-plain-wordmark" },
               { type: 'icon', name: "css3-plain-wordmark" },
               { type: 'icon', name: "react-original-wordmark" },
-              { type: 'icon', name: "reactnative-original-wordmark" },
+              { type: 'img', src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg", alt: "SQLite" },
               { type: 'icon', name: "git-plain-wordmark" },
               { type: 'icon', name: "nodejs-plain-wordmark" },
               { type: 'icon', name: "amazonwebservices-plain-wordmark" },
