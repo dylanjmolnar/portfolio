@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan | Portfolio</title>
+    <meta name="description" content="Hi! I'm Dylan, a full-stack developer with 8 years of experience.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Devicon -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-transition">
+    <!-- Background blobs -->
+    <div class="bg-blob blob-red"></div>
+    <div class="bg-blob blob-purple"></div>
+
+    <!-- Header Navigation -->
+    <header class="z-50 relative">
+        <div class="nav-background"></div>
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Intro Section -->
+        <section id="home" class="intro-section fade-in-up">
+            <div class="flex-center">
+                <div class="portrait-container">
+                    <img src="assets/portrait.jpg" alt="Dylan Portrait" class="portrait-img">
+                    <span class="wave-emoji">👋</span>
+                </div>
+            </div>
+
+            <h1 class="intro-heading fade-in-up delay-1">
+                Hey! I'm <span class="font-bold text-gradient">Dylan</span>, a Software Engineer with over 
+                <span class="font-bold"><span id="years-of-experience">8</span> years</span> of experience.
+            </h1>
+
+            <div class="intro-buttons fade-in-up delay-2">
+                <div class="btn-row">
+                    <button id="header-copy-email" class="btn unified-btn min-w-[19rem] group">
+                        <div class="btn-shine"></div>
+                        <span class="btn-text">dylanmolnar1@gmail.com</span>
+                        <svg class="icon copy-icon group-hover-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <svg class="icon check-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </button>
+                    <a href="assets/Resume.pdf" download class="btn unified-btn group">
+                        <div class="btn-shine"></div>
+                        Download Resume 
+                        <svg class="icon download-icon group-hover-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+                <div class="social-row">
+                    <a href="https://linkedin.com/in/dylanjmolnar" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/dylanjmolnar" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="divider fade-in-up"></div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in-up">
+            <h2 class="section-heading">About Me</h2>
+            <div class="glass-card mt-8">
+                <p class="mb-6">
+                    What started as a small coding project to make my own life easier has transformed into a passion for developing systems and software for myself and others. 
+                </p>
+                <p>
+                    When I'm not coding, I am... 
+                    <span class="dynamic-lang-container">
+                        <span id="dynamic-lang">learning new languages</span>
+                    </span>
+                    , modifying cars/bikes, and traveling the world.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section fade-in-up">
+            <h2 class="section-heading">My projects</h2>
+            
+            <div class="projects-container">
+                <!-- Client Work Category -->
+                <div class="category-group fade-in-up">
+                    <h3 class="category-heading">
+                        <span class="line"></span> Client Work <span class="line"></span>
+                    </h3>
+                    
+                    <a href="https://r-iq.net" target="_blank" class="project-card fade-in-up delay-1">
+                        <div class="project-content">
+                            <h3>Retail Smart</h3>
+                            <p class="project-role">Software Engineer</p>
+                            <p class="project-date">Mar 2023 - Dec 2024</p>
+                            <p class="project-desc">Regional platform connecting clients and wholesalers across New England with real-time analytics and inventory management.</p>
+                            <ul class="project-tags">
+                                <li>TypeScript</li><li>React Native</li><li>Firebase</li>
+                            </ul>
+                        </div>
+                        <img src="assets/Retail_Smart.png" alt="Retail Smart" class="project-img">
+                    </a>
+
+                    <div class="project-card fade-in-up delay-2">
+                        <div class="project-content">
+                            <h3>Automated Moderation Services</h3>
+                            <p class="project-role">Software Engineer</p>
+                            <p class="project-date">Nov 2017 - Apr 2021</p>
+                            <p class="project-desc">Chatting platform moderation tools reaching over 50k users. Built for scale and reliability.</p>
+                            <ul class="project-tags">
+                                <li>Javascript</li><li>Node.js</li><li>SQLite</li>
+                            </ul>
+                        </div>
+                        <img src="assets/Auto_Mod_Service.png" alt="Auto Mod Service" class="project-img">
+                    </div>
+                </div>
+
+                <!-- Industry Experience Category -->
+                <div class="category-group mt-24 fade-in-up">
+                    <h3 class="category-heading">
+                        <span class="line"></span> Industry Experience <span class="line"></span>
+                    </h3>
+                    
+                    <div class="project-card fade-in-up delay-1">
+                        <div class="project-content">
+                            <h3>Pfizer</h3>
+                            <p class="project-role">Automation Engineer</p>
+                            <p class="project-date">Sep 2022 - Present</p>
+                            <p class="project-desc">Modernized legacy control systems and integrate new automated equipment to enhance process reliability.</p>
+                            <ul class="project-tags">
+                                <li>PLC</li><li>SCADA</li><li>SQL</li><li>OSI PI</li>
+                            </ul>
+                        </div>
+                        <img src="assets/Pfizer_Logo.png" alt="Pfizer" class="project-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section fade-in-up">
+            <h2 class="section-heading">Technical Expertise</h2>
+            
+            <div class="mt-12">
+                <h3 class="category-heading fade-in-up">
+                    <span class="line"></span> Industrial Automation <span class="line"></span>
+                </h3>
+                <ul class="skills-list fade-in-up delay-1">
+                    <li class="skill-pill">PLC</li>
+                    <li class="skill-pill">SCADA</li>
+                    <li class="skill-pill">Rockwell</li>
+                    <li class="skill-pill">GE iFIX</li>
+                    <li class="skill-pill">PLC-5</li>
+                    <li class="skill-pill">FactoryTalk</li>
+                    <li class="skill-pill">OSI PI</li>
+                    <li class="skill-pill">Dream Report</li>
+                    <li class="skill-pill">Validation</li>
+                    <li class="skill-pill">GMP</li>
+                </ul>
+
+                <div class="devicon-container fade-in-up delay-2 mt-12">
+                    <div class="devicon-item"><i class="devicon-microsoftsqlserver-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-oracle-original colored"></i></div>
+                    <div class="devicon-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="Visual Basic"/></div>
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <h3 class="category-heading fade-in-up">
+                    <span class="line"></span> Software Engineering <span class="line"></span>
+                </h3>
+                <div class="devicon-container fade-in-up delay-1 mt-12">
+                    <div class="devicon-item"><i class="devicon-typescript-plain colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-javascript-plain colored"></i></div>
+                    <div class="devicon-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python"/></div>
+                    <div class="devicon-item"><i class="devicon-html5-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-css3-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-react-original-wordmark colored"></i></div>
+                    <div class="devicon-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg" alt="SQLite"/></div>
+                    <div class="devicon-item"><i class="devicon-git-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-nodejs-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-firebase-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-reactbootstrap-original colored"></i></div>
+                    <div class="devicon-item"><i class="devicon-tailwindcss-plain-wordmark colored"></i></div>
+                    <div class="devicon-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite"/></div>
+                    <div class="devicon-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="dark-invert"/></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="divider fade-in-up"></div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section fade-in-up">
+            <h2 class="section-heading">Get In Touch</h2>
+            <p class="contact-subtext">Let's collaborate on your next project!</p>
+            
+            <button id="footer-copy-email" class="btn contact-btn unified-btn group">
+                <div class="btn-shine"></div>
+                <span class="btn-text">dylanmolnar1@gmail.com</span>
+                <svg class="icon copy-icon group-hover-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <svg class="icon check-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <small class="block mb-2 text-xs">
+            &copy; <span id="current-year"></span> Dylan. All rights reserved.
+        </small>
+    </footer>
+
+    <!-- Theme Switcher -->
+    <button id="theme-switch" class="theme-btn">
+        <svg id="sun-icon" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg id="moon-icon" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
