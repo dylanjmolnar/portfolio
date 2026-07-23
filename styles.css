@@ -583,7 +583,6 @@ header {
 @media (min-width: 640px) {
   .project-card {
     height: 20rem;
-    padding-right: 2rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -678,16 +677,20 @@ header {
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    right: 1rem;
-    width: 20rem;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    max-width: calc(50% - 2rem);
+    max-height: calc(100% - 2.5rem);
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 0.75rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
   }
 
   .project-card:hover .project-img {
-    transform: translateY(-50%) scale(1.04) rotate(2deg);
+    transform: translate(-50%, -50%) scale(1.04) rotate(2deg);
   }
 }
 
